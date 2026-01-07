@@ -1,0 +1,191 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* =========================
+   BODY
+========================= */
+body {
+  background: #000;
+  color: #e0e0e0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* =========================
+   HEADER
+========================= */
+header {
+  text-align: center;
+  margin-top: 80px;
+  padding: 0 16px;
+}
+
+header h1 {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+header p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+main {
+  margin: 60px auto 0;
+  width: 90%;
+  max-width: 480px;
+  text-align: center;
+}
+
+/* =========================
+   PASSWORD INPUT WRAPPER
+========================= */
+.password-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* =========================
+   PASSWORD INPUT
+========================= */
+.password-wrapper input {
+  width: 100%;
+  padding: 14px 52px 14px 14px;
+  background-color: #000 !important;
+  border: 1px solid #444;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 2px;
+}
+
+.password-wrapper input::placeholder {
+  color: #666;
+}
+
+.password-wrapper input:focus {
+  outline: none;
+  border-color: #e0e0e0;
+}
+
+/* -------------------------
+   Chrome Autofill FIX
+------------------------- */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #000 inset !important;
+  -webkit-text-fill-color: #fff !important;
+}
+
+/* =========================
+   PASSWORD TOGGLE BUTTON
+========================= */
+.toggle-btn {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 50%;
+  color: #e0e0e0;
+  font-size: 14px;
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+.toggle-btn:hover {
+  background: #222;
+  opacity: 1;
+}
+
+/* =========================
+   WARNING NOTE
+========================= */
+.note {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #888;
+}
+
+/* =========================
+   PRIMARY ACTION BUTTON
+========================= */
+.primary-btn {
+  width: 100%;
+  margin-top: 18px;
+  padding: 14px;
+  background: #e0e0e0;
+  border: none;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.primary-btn:hover {
+  background: #fff;
+}
+
+/* =========================
+   RESULT OUTPUT
+========================= */
+#result {
+  margin-top: 32px;
+  font-size: 15px;
+  line-height: 1.7;
+  text-align: left;
+}
+
+/* Result box visuals */
+#result {
+  background: #070707;
+  border: 1px solid #222;
+  padding: 12px;
+  border-radius: 4px;
+}
+
+#result p {
+  margin-bottom: 6px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  margin-top: auto;
+  padding: 20px;
+  text-align: center;
+  font-size: 12px;
+  color: #777;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+@media (max-width: 420px) {
+  header h1 {
+    font-size: 26px;
+  }
+
+  main {
+    margin-top: 40px;
+  }
+}
