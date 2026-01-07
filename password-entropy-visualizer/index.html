@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Password Entropy Visualizer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="../code.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Password Entropy Visualizer</h1>
+    <p>Measure password strength using entropy calculation</p>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <div class="password-wrapper">
+      <input
+        type="password"
+        id="password"
+        placeholder="Enter test password"
+        autocomplete="off"
+        spellcheck="false"
+      />
+      <button
+        class="toggle-btn"
+        type="button"
+        onclick="togglePassword()"
+        aria-label="Toggle password visibility"
+      >
+        👁
+      </button>
+    </div>
+
+    <p class="note">⚠️ Do not enter real passwords. Testing purpose only.</p>
+
+    <button type="button" class="primary-btn" onclick="analyze()">Analyze Strength</button>
+
+    <div id="result"></div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    Entropy based analysis • Client-side only • Cyber security demo
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
